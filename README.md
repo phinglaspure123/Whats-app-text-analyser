@@ -32,6 +32,7 @@ The Whatsapp Chat Analyzer is a Python-based tool designed to analyze chat data 
 - Text file containing stopwords for Hindi language.
 ## Usage/Examples
 
+- To Export chat => Open the chat > Tap More options > More > Export chat > Without media
 - Upload the exported WhatsApp chat file.
 - Select the user or view overall analysis.
 - Click on "Show Analysis" to generate insights and visualizations.

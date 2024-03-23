@@ -6,11 +6,11 @@ import re
 import seaborn as sns
 
 st.set_page_config(layout='wide',page_title='Whatsapp Chat Analyzer')
-st.sidebar.title("Whatsapp Chat Analyzer")
-
-
 
 def main():
+    st.sidebar.title("Whatsapp Chat Analyzer")
+    st.sidebar.write("To export chat")
+    st.sidebar.write("1. Open the chat \n2. Tap More options \n3. More > Export chat > Without media")
     # upload chat
     uploaded_file=st.sidebar.file_uploader("Choose a File")
     if uploaded_file is not None:
@@ -27,8 +27,6 @@ def main():
         user_list.insert(0,"Overall")
         
         selected_user=st.sidebar.selectbox("Show Analysis W.R.T",user_list)
-        
-        # if st.sidebar.button("Show Analysis"):
         # stats
         st.header("Top Statistics ")
         num_messages,words,num_media,num_links=helper.fetch_stats(selected_user,df)
