@@ -51,7 +51,7 @@ run this command in terminal
 Clone the project
 
 ```bash
-  git clone https://github.com/phinglaspure123/3.-Whats-app-text-analyser.git
+  git clone https://github.com/phinglaspure123/Whats-app-text-analyser.git
 ```
 
 Go to the project directory
