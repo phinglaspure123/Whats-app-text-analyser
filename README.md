@@ -77,9 +77,7 @@ Start the server
 
 Deployed on 
 
-```bash
   [Heroku](https://whats-app-text-analyser-3257b7242167.herokuapp.com/)
-```
 
 
 ## Authors
