@@ -75,10 +75,10 @@ Start the server
 
 ## Deployment
 
-To deploy this project run
+Deployed on 
 
 ```bash
-  
+  [Heroku](https://whats-app-text-analyser-3257b7242167.herokuapp.com/)
 ```
 
 
