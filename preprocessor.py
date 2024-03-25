@@ -24,10 +24,15 @@ def preprocess(data):
         # Remove unwanted characters from the datetime column
         df['msg_date'] = df['msg_date'].str.replace("\u202F", "").str.replace(" -", "")
         # Adjust the format string to handle the extra space
-        format_string ="%d/%m/%y, %I:%M%p "
+        format_string ="%d/%m/%Y, %I:%M%p"
         # Convert the datetime column to datetime format
-        df['msg_date'] = pd.to_datetime(df['msg_date'], format=format_string)
-    
+        try:
+            df['msg_date'] = pd.to_datetime(df['msg_date'], format=format_string)
+        except:
+            try:
+                df['msg_date'] = pd.to_datetime(df['msg_date'], format='mixed')
+            except:
+                df['msg_date'] = pd.to_datetime(df['msg_date'], format='ISO8601')
     else:
         df['msg_date']=pd.to_datetime(df['msg_date'], format='%d/%m/%Y, %H:%M - ')
     
